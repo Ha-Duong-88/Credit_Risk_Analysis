@@ -26,7 +26,7 @@ The analysis involved the following process:
 Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and libraries including NumPy, version 1.11 or later, SciPy, version 0.17 or later, and Scikit-learn, version 0.21 or later, and six machine learning models. A machine learning environment was also set up with accompanying Anaconda packages.
 
 
-# Results
+# Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports)
 
 ### Oversampling with RandomOverSamper Results
 
