@@ -18,10 +18,32 @@ The analysis involved the following process:
 
 1) Oversample the data using the RandomOverSampler and SMOTE algorithms.
 2) Undersample the data using the ClusterCentroids algorithm.
-3) Use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm.
+3) Use a combinatorial approach of over and undersampling using the SMOTEENN algorithm.
 4) Compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk.
 5) Finally, evaluate the performance of these models using balanced accuracy, precision, and recall (sensitivity) scores.
 
-Technologies used:  Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn Package and libraries including NumPy, version 1.11 or later, SciPy, version 0.17 or later, and Scikit-learn, version 0.21 or later, and six machine learning models. A machine learning environment was also set up and accompanying Anaconda packages.
+## Technologies Used
+Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and libraries including NumPy, version 1.11 or later, SciPy, version 0.17 or later, and Scikit-learn, version 0.21 or later, and six machine learning models. A machine learning environment was also set up with accompanying Anaconda packages.
 
-# 
+
+# Results
+
+### Oversampling with RandomOverSamper Results
+
+Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user-images.githubusercontent.com/80140082/124972911-bf975880-dfdf-11eb-81af-edd90318471d.png)
+
+### Oversampling with SMOTE Results
+
+Oversampling_SMOTE.png![Oversampling_SMOTE](https://user-images.githubusercontent.com/80140082/124973262-287ed080-dfe0-11eb-92d3-25903ea4cb92.png)
+
+### Undersampling with ClusterCentroids Reults
+
+Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user-images.githubusercontent.com/80140082/124973460-6845b800-dfe0-11eb-8c0c-9da80160e8eb.png)
+
+### Combinatorial with SMOTEEN Results
+
+Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubusercontent.com/80140082/124973588-99be8380-dfe0-11eb-9440-21b94aa4b58e.png)
+
+
+# Analysis 
+## Recommendations
