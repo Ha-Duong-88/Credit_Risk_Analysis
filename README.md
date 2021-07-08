@@ -26,21 +26,21 @@ The analysis involved the following process:
 Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and libraries including NumPy, version 1.11 or later, SciPy, version 0.17 or later, and Scikit-learn, version 0.21 or later, and six machine learning models. A machine learning environment was also set up with accompanying Anaconda packages.
 
 
-# Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports)
+# Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports) For Credit Resampling Machine Learning
 
-### Oversampling with RandomOverSamper Results
+### Oversampling with RandomOverSamper Model
 
 Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user-images.githubusercontent.com/80140082/124972911-bf975880-dfdf-11eb-81af-edd90318471d.png)
 
-### Oversampling with SMOTE Results
+### Oversampling with SMOTE Model
 
 Oversampling_SMOTE.png![Oversampling_SMOTE](https://user-images.githubusercontent.com/80140082/124973262-287ed080-dfe0-11eb-92d3-25903ea4cb92.png)
 
-### Undersampling with ClusterCentroids Reults
+### Undersampling with ClusterCentroids Model
 
 Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user-images.githubusercontent.com/80140082/124973460-6845b800-dfe0-11eb-8c0c-9da80160e8eb.png)
 
-### Combinatorial with SMOTEEN Results
+### Combinatorial with SMOTEEN Model
 
 Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubusercontent.com/80140082/124973588-99be8380-dfe0-11eb-9440-21b94aa4b58e.png)
 
