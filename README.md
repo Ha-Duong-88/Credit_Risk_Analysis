@@ -32,6 +32,10 @@ Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and librari
 
 Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user-images.githubusercontent.com/80140082/124972911-bf975880-dfdf-11eb-81af-edd90318471d.png)
 
+* The balanced accuracy score is 65%
+* The high_risk precision is about 1% only with 61% sensitivity which makes a F1 of 2% only.
+* The precision for the low_risk population is 100% with a sensitivity of 68%. 
+
 ### Oversampling with SMOTE Model
 
 Oversampling_SMOTE.png![Oversampling_SMOTE](https://user-images.githubusercontent.com/80140082/124973262-287ed080-dfe0-11eb-92d3-25903ea4cb92.png)
@@ -53,8 +57,7 @@ Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubus
 ### Summary
 * The model achieved an accuracy score of 0.6456130066757718 (65%). This means that not every single observations in the testing set was predicted correctly by the model. In other words, it predicted correctly 65% of the time. This also suggests that the dataset may be relatively balanced (versus imbalanced). To contrast this, if the model had achieved an accuracy score of .90 (90%) or 1.0 (100%), it can be mis-leading. A score this high would mean that every single observation in the testing set was predicted correctly by the model. It is rare in actual practice to achieve a perfect accuracy score in the real world.  Moreover, an extremely high metric is a sign for potential overfitting. 
 
-* Looking at the Imbalanced Classification Report, the precision ("pre" column) is .01 which is lower than the recall ("rec" column) which is .68 for the high_risk (majority) class, and precision is high at 1.0 for the low_risk (minority) class.
-
+* Looking at the Imbalanced Classification Report, the precision ("pre" column) is .01 which is lower than the recall ("rec" column) which is .61 for the high_risk (majority) class, and for the low_risk (minority) class, the precision is high at 1.0 and the recall is .61, comparatively close to recall for the high_risk class.
 
 
 - Notes only -- remove later
