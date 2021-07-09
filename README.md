@@ -49,4 +49,25 @@ Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubus
 
 
 # Analysis 
+
+### Summary
+* The model achieved an accuracy score of 62% (0.6156536172852936). This means that not every single observations in the testing set was predicted correctly by the model. In other words, it predicted correctly 60% of the time. This also suggests that the dataset may be relatively balanced. To contrast this, if the model had achieved an accuracy score of 90% (.90) or 100% (1.0), it can be mis-leading. A score this high would mean that every single observation in the testing set was predicted correctly by the model. It is rare in actual practice to achieve a perfect accuracy score in the real world.  Moreover, an extremely high metric is a sign for potential overfitting. 
+
+
+
+
+Overfitting refers to an instance in which the patterns picked up by a model are too specific to a specific dataset. 
+
+The sole purpose of the next cell is to create a new data point, which shows up as a red dot on the new plot. The logistic regression model will then classify this sample as belonging to class 0 (purple) or class 1 (yellow):
+
+
+- Notes only -- remove later
+1. Logistic Regression is a statistical method for predicting binary outcomes from data.
+Examples of this are "yes" vs "no" or "high credit risk" vs "low credit risk".
+
+We can calculate logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability. These are categories that translate to probability of being a 0 or a 1
+
+Logistic regression predicts binary outcomes, meaning that there are only two possible outcomes. An example of logistic regression might be to decide, based on personal information, whether to approve a credit card application. Multiple variables, such as an applicant's age and income, are assessed to arrive at one of two answers: to approve or to deny the application.
+
+In other words, a logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.
 ## Recommendations
