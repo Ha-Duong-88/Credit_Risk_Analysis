@@ -51,14 +51,10 @@ Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubus
 # Analysis 
 
 ### Summary
-* The model achieved an accuracy score of 62% (0.6156536172852936). This means that not every single observations in the testing set was predicted correctly by the model. In other words, it predicted correctly 60% of the time. This also suggests that the dataset may be relatively balanced. To contrast this, if the model had achieved an accuracy score of 90% (.90) or 100% (1.0), it can be mis-leading. A score this high would mean that every single observation in the testing set was predicted correctly by the model. It is rare in actual practice to achieve a perfect accuracy score in the real world.  Moreover, an extremely high metric is a sign for potential overfitting. 
+* The model achieved an accuracy score of 0.6456130066757718 (65%). This means that not every single observations in the testing set was predicted correctly by the model. In other words, it predicted correctly 65% of the time. This also suggests that the dataset may be relatively balanced (versus imbalanced). To contrast this, if the model had achieved an accuracy score of .90 (90%) or 1.0 (100%), it can be mis-leading. A score this high would mean that every single observation in the testing set was predicted correctly by the model. It is rare in actual practice to achieve a perfect accuracy score in the real world.  Moreover, an extremely high metric is a sign for potential overfitting. 
 
+* Looking at the Imbalanced Classification Report, the precision ("pre" column) is .01 which is lower than the recall ("rec" column) which is .68 for the high_risk (majority) class, and precision is high at 1.0 for the low_risk (minority) class.
 
-
-
-Overfitting refers to an instance in which the patterns picked up by a model are too specific to a specific dataset. 
-
-The sole purpose of the next cell is to create a new data point, which shows up as a red dot on the new plot. The logistic regression model will then classify this sample as belonging to class 0 (purple) or class 1 (yellow):
 
 
 - Notes only -- remove later
