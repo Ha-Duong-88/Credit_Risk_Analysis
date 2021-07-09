@@ -86,6 +86,10 @@ Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_m
 
 ### Summary
 
-All of the models used for this credit risk analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity score to 91% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenus. Ideally, a strong model(s) would be able to predict a high nunber of true positives or high number of low credit risk applicant to offer credit. Given the weak performance of the models evaluated, the recommendation is not to utilize them to predict credit risk.
+All of the models used for this credit risk analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity score to 91% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenus. Ideally, a strong model(s) would be able to predict a high nunber of true positives or high number of low credit risk applicant to offer credit. 
+
+### Recommendation
+
+Given the weak performance of the models evaluated, the recommendation is not to utilize them to predict credit risk.
 
 
