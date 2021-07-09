@@ -34,7 +34,7 @@ Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user
 
 * The balanced accuracy score is 65%
 * The high_risk precision is 1% only with 61% sensitivity which makes a F1 score of 2%.
-* The precision for the low_risk population is 100% with a sensitivity of 68%. 
+* The precision for the low_risk population is 100% with a sensitivity (recall) of 68%. 
 
 
 ## Oversampling with SMOTE Model
@@ -62,37 +62,30 @@ Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubus
 
 * The balanced accuracy score increased to about 62%.
 * The high_risk precision is still 1% only with 54% sensitivity which makes a F1 of 2%.
-* Due to the high number of false positives, the low_risk sensitivity is only 54% even though the precision is 100%.
+* Due to the high number of false positives, the precision is 100% and the low_risk sensitivity is only 54%.
 
 
-## Balanced Random Forest Classifier¶ Model
+## Balanced Random Forest Classifier Model
 
 BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](https://user-images.githubusercontent.com/80140082/125127646-ab239080-e0b1-11eb-96c6-50d18e46b0eb.png)
 
+* The balanced accuracy score improved to about 79%.
+* The high_risk precision is still low at 4% with 67% sensitivity which makes a F1 of only 7%.
+* Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94%.
 
 ## Easy Ensemble AdaBoost Classifier Model
 
 Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_model](https://user-images.githubusercontent.com/80140082/125127849-0190cf00-e0b2-11eb-9a96-c3b6644220a9.png)
+
+* The balanced accuracy score is high to about 93%.
+* The high_risk precision is still low at 7% with 91% sensitivity which makes a F1 of only 14%.
+* Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94% with 
 
 
 # Analysis 
 
 ### Summary
 
+All of the models used for this credit risk analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity score to 91% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenus. Ideally, a strong model(s) would be able to predict a high nunber of true positives or high number of low credit risk applicant to offer credit. Given the weak performance of the models evaluated, the recommendation is not to utilize them to predict credit risk.
 
 
-* The model achieved an accuracy score of 0.6456130066757718 (65%). This means that not every single observations in the testing set was predicted correctly by the model. In other words, it predicted correctly 65% of the time. This also suggests that the dataset may be relatively balanced (versus imbalanced). To contrast this, if the model had achieved an accuracy score of .90 (90%) or 1.0 (100%), it can be mis-leading. A score this high would mean that every single observation in the testing set was predicted correctly by the model. It is rare in actual practice to achieve a perfect accuracy score in the real world.  Moreover, an extremely high metric is a sign for potential overfitting. 
-
-* Looking at the Imbalanced Classification Report, the precision ("pre" column) is .01 which is lower than the recall ("rec" column) which is .61 for the high_risk (majority) class, and for the low_risk (minority) class, the precision is high at 1.0 and the recall is .61, comparatively close to recall for the high_risk class.
-
-
-- Notes only -- remove later
-1. Logistic Regression is a statistical method for predicting binary outcomes from data.
-Examples of this are "yes" vs "no" or "high credit risk" vs "low credit risk".
-
-We can calculate logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability. These are categories that translate to probability of being a 0 or a 1
-
-Logistic regression predicts binary outcomes, meaning that there are only two possible outcomes. An example of logistic regression might be to decide, based on personal information, whether to approve a credit card application. Multiple variables, such as an applicant's age and income, are assessed to arrive at one of two answers: to approve or to deny the application.
-
-In other words, a logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.
-## Recommendations
