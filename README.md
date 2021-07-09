@@ -58,7 +58,7 @@ Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user
 
 ## Combinatorial with SMOTEEN Model
 
-Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubusercontent.com/80140082/124973588-99be8380-dfe0-11eb-9440-21b94aa4b58e.png)
+Combinatorial_SMOTEEN.png![Combinatorial_SMOTEEN](https://user-images.githubusercontent.com/80140082/125140714-fea0d900-e0c7-11eb-8cec-6befb9f5fb9c.png)
 
 * The balanced accuracy score increased to about 62%.
 * The high_risk precision is still 1% only with 54% sensitivity which makes a F1 of 2%.
