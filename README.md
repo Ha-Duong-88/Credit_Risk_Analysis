@@ -67,7 +67,7 @@ Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubus
 
 ## Balanced Random Forest Classifier Model
 
-BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](https://user-images.githubusercontent.com/80140082/125127646-ab239080-e0b1-11eb-96c6-50d18e46b0eb.png)
+BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](https://user-images.githubusercontent.com/80140082/125140612-c1d4e200-e0c7-11eb-954f-cf3675640b85.png)
 
 * The balanced accuracy score improved to about 79%.
 * The high_risk precision is still low at 4% with 67% sensitivity which makes a F1 of only 7%.
