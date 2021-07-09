@@ -28,7 +28,7 @@ Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and librari
 
 # Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports) For Credit Resampling Machine Learning
 
-### Oversampling with RandomOverSamper Model
+## Oversampling with RandomOverSamper Model
 
 Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user-images.githubusercontent.com/80140082/124972911-bf975880-dfdf-11eb-81af-edd90318471d.png)
 
@@ -36,7 +36,8 @@ Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user
 * The high_risk precision is 1% only with 61% sensitivity which makes a F1 score of 2%.
 * The precision for the low_risk population is 100% with a sensitivity of 68%. 
 
-### Oversampling with SMOTE Model
+
+## Oversampling with SMOTE Model
 
 Oversampling_SMOTE.png![Oversampling_SMOTE](https://user-images.githubusercontent.com/80140082/124973262-287ed080-dfe0-11eb-92d3-25903ea4cb92.png)
 
@@ -45,10 +46,8 @@ Oversampling_SMOTE.png![Oversampling_SMOTE](https://user-images.githubuserconten
 * The high_risk precision is 1% with 64% sensitivity which makes a F1 score of 2%.
 * The precision for the low_risk population is 100% with a sensitivity of 64%.
 
-### Undersampling with ClusterCentroids Model
 
-Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user-images.githubusercontent.com/80140082/124973460-6845b800-dfe0-11eb-8c0c-9da80160e8eb.png)
-
+## Undersampling with ClusterCentroids Model
 
 Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user-images.githubusercontent.com/80140082/124975171-95936580-dfe2-11eb-89d0-c2936723a490.png)
 
@@ -56,7 +55,8 @@ Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user
 * The high_risk precision is still 1% with 61% sensitivity which makes a F1 score of 1%.
 * The precision for the low_risk population is 100% with 45% sensitivity. This is likely due to the high number of false positives.
 
-### Combinatorial with SMOTEEN Model
+
+## Combinatorial with SMOTEEN Model
 
 Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubusercontent.com/80140082/124973588-99be8380-dfe0-11eb-9440-21b94aa4b58e.png)
 
@@ -64,11 +64,13 @@ Combinatorial_SMOTEEEN.png![Combinatorial_SMOTEEEN](https://user-images.githubus
 * The high_risk precision is still 1% only with 54% sensitivity which makes a F1 of 2%.
 * Due to the high number of false positives, the low_risk sensitivity is only 54% even though the precision is 100%.
 
-### Balanced Random Forest Classifier¶ Model
+
+## Balanced Random Forest Classifier¶ Model
 
 BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](https://user-images.githubusercontent.com/80140082/125127646-ab239080-e0b1-11eb-96c6-50d18e46b0eb.png)
 
-### Easy Ensemble AdaBoost Classifier Model
+
+## Easy Ensemble AdaBoost Classifier Model
 
 Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_model](https://user-images.githubusercontent.com/80140082/125127849-0190cf00-e0b2-11eb-9a96-c3b6644220a9.png)
 
