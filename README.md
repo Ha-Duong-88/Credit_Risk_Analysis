@@ -86,12 +86,14 @@ Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_m
 
 ## Summary
 
-The models used in this analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity (recall) score to 94% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside with the high precision score of 100% is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenue opportunity. Perfect precision would mean that applicants declared high credit risk actually are high risk. However, it also means that many low credit risks applicants are falsely predicted as high risk. If the business objective is to detect high credit risk, then ideally, a strong model(s) would be able to predict a high number of true positives or true high credit risk. 
-
+The models used in this analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity (recall) score to 94% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside with the high precision score of 100% is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the bank's credit lending strategy and revenue opportunity. Perfect precision would mean that applicants declared high credit risk actually are high risk. However, it also means that many low credit risks applicants are falsely predicted as high risk. If the business objective is to detect high credit risk, then ideally, a strong model(s) would be able to predict a high number of true positives or true high credit risk. 
 
 ## Recommendation
 
 Given the weak performance of the models evaluated, the recommendation is not to utilize them to predict credit risk.
+
+Alternatively, depending on the risk framework and risk tolerance level of the bank offering credit cards, it may decide to utilize one or several of the models in combination because the trade-off of excluding the high false positives (predicted as high credit risk but are actually low credit risk) and discriminating against potential discriminating outweighs the risk of approving actual high credit risk applicants. Overall, it is best to explore other models.
+
 
 
 
