@@ -1,15 +1,5 @@
 # Credit_Risk_Analysis
 
-Overview of the analysis: Explain the purpose of this analysis.
-
-Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
-
-Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
-
-There is a title, and there are multiple sections (2 pt)
-Each section has a heading and subheading (2 pt)
-Links to images are working, and code is formatted and displayed correctly (2 pt).
-
 # Project Overview
 Using a credit card credit dataset from LendingClub, a peer-to-peer lending services company, the objective of this project was to assess the credit worthiness of applicants by applying machine learning to credit card risk analysis. Since credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans, the scope of the project entailed employing different techniques to train and evaluate models with unbalanced classes using the imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling.
 
@@ -22,13 +12,17 @@ The analysis involved the following process:
 4) Compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk.
 5) Finally, evaluate the performance of these models using balanced accuracy, precision, and recall (sensitivity) scores.
 
-## Technologies Used
+
+
+## Technologies
 Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and libraries including NumPy, version 1.11 or later, SciPy, version 0.17 or later, and Scikit-learn, version 0.21 or later, and six machine learning models. A machine learning environment was also set up with accompanying Anaconda packages.
+
 
 
 # Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports) For Credit Resampling Machine Learning
 
 Note - While the term recall is more commonly used in machine learning, the two terms are synonymous and will be used interchangeably in this report.
+
 
 ## Oversampling with RandomOverSamper Model
 
@@ -75,6 +69,7 @@ BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](
 * The high_risk precision is still low at 4% with 67% sensitivity which makes a F1 of only 7%.
 * Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94%.
 
+
 ## Easy Ensemble AdaBoost Classifier Model
 
 Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_model](https://user-images.githubusercontent.com/80140082/125127849-0190cf00-e0b2-11eb-9a96-c3b6644220a9.png)
@@ -84,11 +79,14 @@ Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_m
 * Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94% with 
 
 
+
 # Analysis 
+
 
 ## Summary
 
 The models used in this analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity (recall) score to 91% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside with the high precision score of 100% is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenue opportunity. Perfect precision would mean that applicants declared high credit risk actually are high risk. However, it also means that many low credit risks applicants are falsely predicted as high risk. If the business objective is to detect high credit risk, then ideally, a strong model(s) would be able to predict a high nunber of true positives or true high credit risk. 
+
 
 ## Recommendation
 
