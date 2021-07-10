@@ -19,7 +19,8 @@ Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and librari
 
 
 
-# Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports) For Credit Resampling Machine Learning
+# Results 
+## Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports For Credit Resampling and Ensemble Machine Learning
 
 Note - While the term recall is more commonly used in machine learning, the two terms are synonymous and will be used interchangeably in this report.
 
