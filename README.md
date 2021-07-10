@@ -29,8 +29,8 @@ Note - While the term recall is more commonly used in machine learning, the two 
 
 Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user-images.githubusercontent.com/80140082/124972911-bf975880-dfdf-11eb-81af-edd90318471d.png)
 
-* The balanced accuracy score is 65%
-* The high_risk precision is 1% only with 61% sensitivity which makes a F1 score of 2%.
+* The balanced accuracy score is 65%.
+* The high_risk precision is 1% with 61% sensitivity which makes a F1 score of 2%.
 * The precision for the low_risk population is 100% with a sensitivity of 68%. 
 
 
@@ -38,7 +38,7 @@ Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user
 
 Oversampling_SMOTE.png![Oversampling_SMOTE](https://user-images.githubusercontent.com/80140082/124973262-287ed080-dfe0-11eb-92d3-25903ea4cb92.png)
 
-* The results are similar to the previous RandomOverSampler model.
+* The SMOTE model results are similar to the previous RandomOverSampler model.
 * The balanced accuracy score is 62%.
 * The high_risk precision is 1% with 64% sensitivity which makes a F1 score of 2%.
 * The precision for the low_risk population is 100% with a sensitivity of 64%.
@@ -50,7 +50,7 @@ Undersampling_ClusterCentroids.png![Undersampling_ClusterCentroids](https://user
 
 * The balanced accuracy score is lower at 53%.
 * The high_risk precision is still 1% with 61% sensitivity which makes a F1 score of 1%.
-* The precision for the low_risk population is 100% with 45% sensitivity. This is likely due to the high number of false positives.
+* The precision for the low_risk population is 100% with 45% sensitivity due to the high number of false positives.
 
 
 ## Combinatorial with SMOTEEN Model
@@ -59,7 +59,7 @@ Combinatorial_SMOTEEN.png![Combinatorial_SMOTEEN](https://user-images.githubuser
 
 * The balanced accuracy score increased to about 62%.
 * The high_risk precision is still 1% only with 54% sensitivity which makes a F1 of 2%.
-* Due to the high number of false positives, the precision is 100% and the low_risk sensitivity is only 54%.
+* The precision for the low_risk is 100% with 54% sensitivity due to the high number of false positives.
 
 
 ## Balanced Random Forest Classifier Model
@@ -68,7 +68,7 @@ BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](
 
 * The balanced accuracy score improved to 79%.
 * The high_risk precision is still low at 4% with 67% sensitivity which makes a F1 of only 7%.
-* Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94%.
+* Due to a high number of false positives, the precision for the low_risk is 100% and the sensitivity is now 94%.
 
 
 ## Easy Ensemble AdaBoost Classifier Model
@@ -77,7 +77,7 @@ Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_m
 
 * The balanced accuracy score is high to about 93%.
 * The high_risk precision is still low at 7% with 91% sensitivity which makes a F1 of only 14%.
-* Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94% with 
+* Due to a high number of false positives, the low_risk precision is 100% and the sensitivity is now 94%.
 
 
 
