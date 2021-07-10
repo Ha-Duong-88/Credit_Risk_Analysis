@@ -28,13 +28,15 @@ Jupyter Notebook, Python, Pandas DataFrame, imbalanced-learn package and librari
 
 # Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports) For Credit Resampling Machine Learning
 
+Note - While the term recall is more commonly used in machine learning, the two terms are synonymous and will be used interchangeably in this report.
+
 ## Oversampling with RandomOverSamper Model
 
 Oversampling_RandomOverSampler.png![Oversampling_RandomOverSampler](https://user-images.githubusercontent.com/80140082/124972911-bf975880-dfdf-11eb-81af-edd90318471d.png)
 
 * The balanced accuracy score is 65%
 * The high_risk precision is 1% only with 61% sensitivity which makes a F1 score of 2%.
-* The precision for the low_risk population is 100% with a sensitivity (recall) of 68%. 
+* The precision for the low_risk population is 100% with a sensitivity of 68%. 
 
 
 ## Oversampling with SMOTE Model
@@ -69,7 +71,7 @@ Combinatorial_SMOTEEN.png![Combinatorial_SMOTEEN](https://user-images.githubuser
 
 BalancedRandomForestClassifier_model.png![BalancedRandomForestClassifier_model](https://user-images.githubusercontent.com/80140082/125140612-c1d4e200-e0c7-11eb-954f-cf3675640b85.png)
 
-* The balanced accuracy score improved to about 79%.
+* The balanced accuracy score improved to 79%.
 * The high_risk precision is still low at 4% with 67% sensitivity which makes a F1 of only 7%.
 * Due to a high number of false positives, the precision is 100% and low_risk sensitivity is now 94%.
 
@@ -86,7 +88,7 @@ Easy Ensemble AdaBoost Classifier_model.png![Easy Ensemble AdaBoost Classifier_m
 
 ## Summary
 
-All of the models used for this credit risk analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity score to 91% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside with the high precision score of 100% is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenue opportunity. Perfect precision would mean that applicants declared high credit risk actually are high risk. However, it also means that many low credit risks applicants are falsely predicted as high risk. If the business objective is to detect high credit risk, then ideally, a strong model(s) would be able to predict a high nunber of true positives or true high credit risk. 
+The models used in this analysis demonstrate weak precision in determining if a credit risk is high. There were higher false positives for the RandomOverSamper, SMOTE, and SMOTEEN mdels compared to the Ensemble models. The Ensemble models improved the sensitivity (recall) score to 91% for the high credit risk class which means that they performed better at predicting high credit risk applicants. The downside with the high precision score of 100% is that the models also predict a high number of false positives meaning a high nunber of low credit risk applicants could also be excluded from being offered credit. Therefore, this would negatively impact the company's credit lending strategy and revenue opportunity. Perfect precision would mean that applicants declared high credit risk actually are high risk. However, it also means that many low credit risks applicants are falsely predicted as high risk. If the business objective is to detect high credit risk, then ideally, a strong model(s) would be able to predict a high nunber of true positives or true high credit risk. 
 
 ## Recommendation
 
