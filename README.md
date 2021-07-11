@@ -92,7 +92,7 @@ Perfect precision would mean that applicants declared high credit risk actually 
 
 ## Recommendation
 
-Given the weak performance of the models evaluated, the recommendation is not to utilize them to predict credit risk. All of the models are inadequately predictive of high credit risk due to the low (<1%) precision and high false positive score of 1.0. Compared to the Oversampling, Underssampling, Combinatorial models, the Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier models performed slightly better in precision for high credit risk. However, 
+Given the weak performance of the models evaluated, the recommendation is not to utilize them to predict credit risk. All of the models are inadequately predictive of high credit risk due to the low (<1%) precision and the high number of false positive outcomes. Compared to the Oversampling, Underssampling, Combinatorial models, the Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier models performed slightly better in precision for high credit risk. However, 
 
 Alternatively, depending on the risk framework and risk tolerance level of the bank offering credit cards, the company may decide to utilize one or several of the models in combination because the trade-off of excluding the high false positives (predicted as high credit risk but are actually low credit risk) and the risk of discriminating against low credit risk applicants outweigh the risk of approving actual high credit risk applicants. In this scenario, the bank may value ensuring equity across demographics in offering credit. Therefore, it is best to explore other models.
 
